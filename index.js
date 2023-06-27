@@ -1,7 +1,4 @@
-console.log("YouTube automated loaded");
-
 var settings_button = document.querySelector(".ytp-settings-button");
-console.log("Settings button loaded");
 settings_button.click();
 settings_button.click();
 var labels = document.getElementsByClassName("ytp-menuitem-label");
