@@ -2,6 +2,10 @@ var yt_settings;
 settings_menu = async () => {
   yt_settings = document.querySelector("ytd-topbar-menu-button-renderer");
   yt_settings.click();
+  while (document.querySelector("ytd-toggle-theme-compact-link-renderer") === null) {
+    console.log("waiting");
+    await new Promise(resolve => setTimeout(resolve, 100));
+  }
   yt_settings.click();
 };
 await settings_menu();
